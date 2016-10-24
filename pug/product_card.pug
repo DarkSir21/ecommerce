@@ -1,0 +1,390 @@
+doctype html
+
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    link(
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous"
+    )
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet")
+    link(rel="stylesheet" href="css/common.css")
+    //- script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+  body
+
+    include ./components/header
+
+
+    .container
+      .row
+        .col-md-12
+          .breadcrumb
+            a.breadcrumb__item(href="#") Главная
+            a.breadcrumb__item(href="#") Каталог
+            a.breadcrumb__item(href="#") Шиномонтаж
+            a.breadcrumb__item.breadcrumb__item_active(href="#") Балансировочные станки
+
+      .row
+        .col-md-12
+          h1.product__title.page-title Балансировочный станок NORDBERG 4638E
+
+      .row
+        .col-md-12
+          .tags
+            .tags__sale Скидка
+
+      .product
+        .row
+          .col-md-4
+
+            .product-gallery
+              .product-gallery__main
+                img(src="../images/stanok.jpg", alt="Станок")
+              .product-gallery__list.flex
+                .product-gallery__list-item.product-gallery__list-item_active
+                  img(src="../images/stanok.jpg", alt="Станок")
+                .product-gallery__list-item
+                  img(src="../images/stanok.jpg", alt="Станок")
+                .product-gallery__list-item
+                  img(src="../images/stanok.jpg", alt="Станок")
+
+            .product__manager
+              img(src='../images/manager.png')
+          .col-md-5
+            .product-tabs__wrapper
+              .product-tabs
+                .product-tabs__nav.flex
+                  a.product-tabs__link.product-tabs__link_active(href="#char")
+                    span.text-unskew Характеристики
+                  a.product-tabs__link(href="#equi")
+                    span.text-unskew Комплектация
+                  a.product-tabs__link(href="#desc")
+                    span.text-unskew Описание
+
+              .product-tabs__content
+                  table.product-tabs__table
+                    tr
+                      td Диаметр вала
+                      td 36 мм
+                    tr
+                      td Педаль фиксации колеса (тормоза)
+                      td есть
+                    tr
+                      td Мощность мотора
+                      td 370 Вт
+                    tr
+                      td Диаметр вала
+                      td 36 мм
+                    tr
+                      td Педаль фиксации колеса (тормоза)
+                      td есть
+                    tr
+                      td Мощность мотора
+                      td 370 Вт
+                    tr
+                      td Диаметр вала
+                      td 36 мм
+                    tr
+                      td Педаль фиксации колеса (тормоза)
+                      td есть
+                    tr
+                      td Мощность мотора
+                      td 370 Вт
+
+
+          .col-md-3
+
+            .product-price
+
+              .product-price__info
+
+                .product-price__discount
+                  | Цена:&nbsp;
+                  span.price-discount 123 450
+
+                .product-price__price 89 900
+
+                .product-price__adven
+                  span.green-check-icon
+                  | доступно в кредит
+
+                .product-price__adven
+                  span.shield-icon
+                  | 1 год гарантии
+
+                .product-price__adven
+                  span.blue-check-icon
+                  | в наличии
+
+              .product-price__btns.flex
+                button.buy-button.btn-red Купить
+                | Купить
+                a(href="#").buy-one-click в 1 клик
+
+              a(href="#").product-price__more-info Выставить счёт для организаций
+
+            .product-price.product-price__deliv
+              .product-price__title
+                | Доставка в&nbsp;
+                span.checked-city Санкт-Петербург
+
+              .product-price__adven
+                span.line-icon
+                | Деловые линии – 12 657 р.
+
+              .product-price__adven
+                span.pek-icon
+                | ПЭК – 6 520 р.
+
+              a(href="#").product-price__more-info Подробнее о доставке и самомывозе
+
+            a(href="#").product-price__compare
+              span.compare-icon
+              | добавить в сравнение
+
+      .review
+        h2.page-title.review__title Отзывы покупателей о сотрудничестве с ООО "ЦТО"
+
+        .steps.flex
+          .steps__step.flex
+            .steps__number.steps__number_active.flex 1
+            .steps__title Кликните на маркер
+          .steps__step.flex
+            .steps__number.steps__number_active.flex 2
+            .steps__title Позвоните покупателю
+          .steps__step.flex
+            .steps__number.steps__number_active.flex 3
+            .steps__title Получите настоящий отзыв
+
+        .ya-map#map
+          script(src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=KT5Sw3h8-UvqmBxA1pQ-B3Bo0Vy47Ooc&width=100%&height=575&lang=ru_RU&sourceType=constructor")
+
+        .video-review
+          h2.page-title.video-review__title Или посмотрите видео отзывы
+
+          a(href="#").red-link.video-review__link-more Смотреть все отзывы
+          .container
+            .row.video-review__item
+              .col-md-3
+                .video-review__desc-wrapper.flex
+                  .video-review__item-title Отзыв на оборудование
+
+                  ul.video-review__list
+                    li.video-review__list-item Балансировочный станок Сивик 1233
+                    li.video-review__list-item Балансировочный станок Сивик 1233
+                    li.video-review__list-item Балансировочный станок Сивик 1233
+
+                  .video-review__author
+                    .video-review__author-name ООО "АвтоРемонтМаркет"
+                    .video-review__author-city г. Таштагол
+
+              .col-md-4
+                iframe( width="345" height="194" src="https://www.youtube.com/embed/Rk6_hdRtJOE" frameborder="0" allowfullscreen)
+
+              .col-md-5
+                p.video-review__desc.
+                  Решили открыть шиномонтаж в г. Таштагол. 
+                  Долго искали поставщика – выбор был достаточно большой.
+                  Но решили остановиться на компании Центр технического
+                  оборудования. Ну, во-первых, по цене сделали действительно
+                  хорошее предложение, а во-вторых, очень грамотно
+                  проконсультировали. выбор был достаточно большой.
+                  Но решили остановиться на компании Центр технического
+                  оборудования. Ну, во-первых, по цене сделали действительно
+                  хорошее предложение, а во-вторых, очень грамотно
+                  проконсультировали. 
+            .row.video-review__item
+              .col-md-3
+                .video-review__desc-wrapper.flex
+                  .video-review__item-title Отзыв на оборудование
+
+                  ul.video-review__list
+                    li.video-review__list-item Балансировочный станок Сивик 1233
+                    li.video-review__list-item Балансировочный станок Сивик 1233
+                    li.video-review__list-item Балансировочный станок Сивик 1233
+
+                  .video-review__author
+                    .video-review__author-name ООО "АвтоРемонтМаркет"
+                    .video-review__author-city г. Таштагол
+
+              .col-md-4
+                iframe( width="345" height="194" src="https://www.youtube.com/embed/Rk6_hdRtJOE" frameborder="0" allowfullscreen)
+
+              .col-md-5
+                p.video-review__desc.
+                  Решили открыть шиномонтаж в г. Таштагол. 
+                  Долго искали поставщика – выбор был достаточно большой.
+                  Но решили остановиться на компании Центр технического
+                  оборудования. Ну, во-первых, по цене сделали действительно
+                  хорошее предложение, а во-вторых, очень грамотно
+                  проконсультировали. выбор был достаточно большой.
+                  Но решили остановиться на компании Центр технического
+                  оборудования. Ну, во-первых, по цене сделали действительно
+                  хорошее предложение, а во-вторых, очень грамотно
+                  проконсультировали. 
+            .row.video-review__item
+              .col-md-3
+                .video-review__desc-wrapper.flex
+                  .video-review__item-title Отзыв на оборудование
+
+                  ul.video-review__list
+                    li.video-review__list-item Балансировочный станок Сивик 1233
+                    li.video-review__list-item Балансировочный станок Сивик 1233
+                    li.video-review__list-item Балансировочный станок Сивик 1233
+
+                  .video-review__author
+                    .video-review__author-name ООО "АвтоРемонтМаркет"
+                    .video-review__author-city г. Таштагол
+
+              .col-md-4
+                iframe( width="345" height="194" src="https://www.youtube.com/embed/Rk6_hdRtJOE" frameborder="0" allowfullscreen)
+
+              .col-md-5
+                p.video-review__desc.
+                  Решили открыть шиномонтаж в г. Таштагол. 
+                  Долго искали поставщика – выбор был достаточно большой.
+                  Но решили остановиться на компании Центр технического
+                  оборудования. Ну, во-первых, по цене сделали действительно
+                  хорошее предложение, а во-вторых, очень грамотно
+                  проконсультировали. выбор был достаточно большой.
+                  Но решили остановиться на компании Центр технического
+                  оборудования. Ну, во-первых, по цене сделали действительно
+                  хорошее предложение, а во-вторых, очень грамотно
+                  проконсультировали. 
+
+    .special-form
+
+      .container
+        .row
+          .col-md-12
+            h2.page-title.special-form__title Узнайте условия покупки по акции, которых нет на сайте!
+
+            form.special-form__form.flex
+              input(type='text' placeholder='Ваше имя').special-form__input
+              input(type='text' placeholder='Телефон').special-form__input
+              input(type='email' placeholder='Почта').special-form__input
+              button(type='submit').special-form__submit.btn-red Получить индивидуальные условия
+
+    .container
+      .row
+        .col-md-12
+          .last-view
+            h2.page-title.last-view__title Недавно вы смотрели эти товары
+
+          .last-view__wrapper-items
+              .row
+                .col-md-3
+
+                  .last-view__item
+                    .last-view__item-image
+                      img(src='../images/stanok.jpg' alt='Станок')
+
+                    .last-view__item-desc
+                      .last-view__item-type Шиномонтажный полуавтоматический станок
+
+                      .last-view__item-name NORDBERG 4638E
+
+                      .last-view__item-actions.flex
+
+                        .last-view__item-prices
+                          .product-price__discount
+                            span.price-discount 123 450
+
+                          .product-price__price 89 900
+
+                        button.last-view__add-cart.btn-red В корзину
+
+                      .product-price__adven
+                        span.green-check-icon
+                        | доступно в кредит
+                .col-md-3
+
+                  .last-view__item
+                    .last-view__item-image
+                      img(src='../images/stanok.jpg' alt='Станок')
+
+                    .last-view__item-desc
+                      .last-view__item-type Шиномонтажный полуавтоматический станок
+
+                      .last-view__item-name NORDBERG 4638E
+
+                      .last-view__item-actions.flex
+
+                        .last-view__item-prices
+                          .product-price__discount
+                            span.price-discount 123 450
+
+                          .product-price__price 89 900
+
+                        button.last-view__add-cart.btn-red В корзину
+
+                      .product-price__adven
+                        span.green-check-icon
+                        | доступно в кредит
+                .col-md-3
+
+                  .last-view__item
+                    .last-view__item-image
+                      img(src='../images/stanok.jpg' alt='Станок')
+
+                    .last-view__item-desc
+                      .last-view__item-type Шиномонтажный полуавтоматический станок
+
+                      .last-view__item-name NORDBERG 4638E
+
+                      .last-view__item-actions.flex
+
+                        .last-view__item-prices
+                          .product-price__discount
+                            span.price-discount 123 450
+
+                          .product-price__price 89 900
+
+                        button.last-view__add-cart.btn-red В корзину
+
+                      .product-price__adven
+                        span.green-check-icon
+                        | доступно в кредит
+                .col-md-3
+
+                  .last-view__item
+                    .last-view__item-image
+                      img(src='../images/stanok.jpg' alt='Станок')
+
+                    .last-view__item-desc
+                      .last-view__item-type Шиномонтажный полуавтоматический станок
+
+                      .last-view__item-name NORDBERG 4638E
+
+                      .last-view__item-actions.flex
+
+                        .last-view__item-prices
+                          .product-price__discount
+                            span.price-discount 123 450
+
+                          .product-price__price 89 900
+
+                        button.last-view__add-cart.btn-red В корзину
+
+                      .product-price__adven
+                        span.green-check-icon
+                        | доступно в кредит
+
+          .desc-site
+            h2.page-title.desc-site__title На сайте centr-to.ru вы можете купить
+
+            ul.desc-site__list
+              li.desc-site__item Шиномонтажное оборудование от официального дилера
+              li.desc-site__item Купить шиномонтажное оборудование со скидкой
+              li.desc-site__item Бесплатно рассчитать цену доставки шиномонтажных станков в свой город
+              li.desc-site__item Заказать оборудование с гарантией от 1 года до 24 месяцев
+
+
+
+
+
+
+
+    include ./components/footer

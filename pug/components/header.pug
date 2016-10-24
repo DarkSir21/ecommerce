@@ -1,0 +1,67 @@
+
+
+header.top-head
+  .cart-bar
+    .container
+      .row
+          .col-md-12
+
+              .flex.top-head__flex
+                .info-menu.clearfix
+                    a.info-menu__item(href="#") О компании
+                    a.info-menu__item(href="#") Бренды
+                    a.info-menu__item(href="#") Информация
+                    a.info-menu__item(href="#") Доставка
+                    a.info-menu__item.info-menu__item_sales-btn(href="#") Распродажа
+
+                form.search(method="POST")
+                    input(
+                      type="text"
+                      placeholder="Искать товар по названию"
+                      required
+                    ).search__input
+                    button(type="button").search__btn.search-icon Найти
+
+                a.cart(href="#")
+                    .cart__icon
+                    .cart__content
+                        .cart__price 2 товара на 450 678
+                        .cart__action Выписать счет
+
+  .category-bar
+
+    .container
+      .row
+        .col-md-2
+          .logo
+            img(src="../images/logo-lg.png", alt="Логотип")
+        .col-md-10
+          .head-info.flex
+            .head-actions
+                a(href="#").head-actions__link.head-actions__link_active
+                  span.text-unskew Каталог
+                a(href="#").head-actions__link
+                  span.text-unskew Сравнения
+                a(href="#").head-actions__link
+                  span.text-unskew Отзывы
+
+            .head-contacts.flex
+              .city-change
+                .city-change__name г. Санкт-Петербург
+                .city-change__link выбрать город доставки
+
+              .phone
+                a.phone__title(href="tel:88007753106")
+                  span.phone__icon
+                  | 8 800 775-31-06
+                .phone__desc Поможем выбрать | Звонок бесплатный
+
+  - var nav = ['Подъемное и  гидравлическое  оборудование','Гаражное  оборудование','Диагностическое  оборудование','Оборудование для кузовного ремонта','Окрасочное  оборудование','Проф. инструмент и мебель','Стенды  "развал- схождения"','Компрессоры','Грузовое  оборудование','Сварочное  оборудование','Моечное  оборувадование','Электростаниции'];
+
+  .container
+    .row
+      .col-md-12
+        nav.navigation.flex
+          a.navigation__link.navigation__link_active(href="#") Шиномонтажное оборудованик
+          each val in nav
+            a.navigation__link(href="#")= val

@@ -1,0 +1,16 @@
+{
+    "use": ["postcss-cssnext", "cssnano", "postcss-focus", "postcss-pxtorem"],
+    "input": "./dist/css/common.css",
+    "output": "./dist/css/common.css",
+    "local-plugins": true,
+    "cssnano": {
+      "discardComments": {
+        "removeAll": true
+      }
+    },
+    "postcss-pxtorem": {
+      "rootValue": 14,
+      "replace": false,
+      "selectorBlackList": ["body", "html"]
+    }
+}
