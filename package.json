@@ -8,6 +8,8 @@
     "cssWatch": "stylus -w stylus/common.styl -o dist/css",
     "htmlCompil": "pug pug/product_card.pug -P -o dist",
     "htmlWatch": "pug pug/product_card.pug -P -o dist -w",
+    "postcssWatch": "postcss -c config.json -w",
+    "postcssCompil": "postcss -c config.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

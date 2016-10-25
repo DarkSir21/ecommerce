@@ -55,7 +55,7 @@ html(lang="ru")
           .col-md-5
             .product-tabs__wrapper
               .product-tabs
-                .product-tabs__nav.flex
+                .product-tabs__nav.flex#tabs
                   a.product-tabs__link.product-tabs__link_active(href="#char")
                     span.text-unskew Характеристики
                   a.product-tabs__link(href="#equi")
@@ -64,7 +64,7 @@ html(lang="ru")
                     span.text-unskew Описание
 
               .product-tabs__content
-                  table.product-tabs__table
+                  table.product-tabs__table.product-tabs__active#char
                     tr
                       td Диаметр вала
                       td 36 мм
@@ -92,6 +92,63 @@ html(lang="ru")
                     tr
                       td Мощность мотора
                       td 370 Вт
+                  table.product-tabs__table#equi
+                    tr
+                      td Диаметр вала67
+                      td 36 мм
+                    tr
+                      td Педаль фиксации колеса (тормоза)
+                      td есть
+                    tr
+                      td Мощность мотора
+                      td 370 Вт
+                    tr
+                      td Диаметр вала
+                      td 36 мм
+                    tr
+                      td Педаль фиксации колеса (тормоза)
+                      td есть
+                    tr
+                      td Мощность мотора
+                      td 370 Вт
+                    tr
+                      td Диаметр вала
+                      td 36 мм
+                    tr
+                      td Педаль фиксации колеса (тормоза)
+                      td есть
+                    tr
+                      td Мощность мотора
+                      td 370 Вт
+                  table.product-tabs__table#desc
+                    tr
+                      td Диаметр вала99
+                      td 36 мм9999
+                    tr
+                      td Педаль фиксации колеса (тормоза)
+                      td есть
+                    tr
+                      td Мощность мотора
+                      td 370 Вт
+                    tr
+                      td Диаметр вала
+                      td 36 мм
+                    tr
+                      td Педаль фиксации колеса (тормоза)
+                      td есть
+                    tr
+                      td Мощность мотора
+                      td 370 Вт
+                    tr
+                      td Диаметр вала
+                      td 36 мм
+                    tr
+                      td Педаль фиксации колеса (тормоза)
+                      td есть
+                    tr
+                      td Мощность мотора
+                      td 370 Вт
+
 
 
           .col-md-3
@@ -102,9 +159,9 @@ html(lang="ru")
 
                 .product-price__discount
                   | Цена:&nbsp;
-                  span.price-discount 123 450
+                  span.price-discount 123 450 <span class="rubl">Р</span>
 
-                .product-price__price 89 900
+                .product-price__price 89 900 <span class="rubl">Р</span>
 
                 .product-price__adven
                   span.green-check-icon
@@ -132,11 +189,11 @@ html(lang="ru")
 
               .product-price__adven
                 span.line-icon
-                | Деловые линии – 12 657 р.
+                | Деловые линии – 12 657 <span class="rubl">Р</span>
 
               .product-price__adven
                 span.pek-icon
-                | ПЭК – 6 520 р.
+                | ПЭК – 6 520 <span class="rubl">Р</span>
 
               a(href="#").product-price__more-info Подробнее о доставке и самомывозе
 
@@ -290,33 +347,9 @@ html(lang="ru")
 
                         .last-view__item-prices
                           .product-price__discount
-                            span.price-discount 123 450
+                            span.price-discount 123 450 <span class="rubl">Р</span>
 
-                          .product-price__price 89 900
-
-                        button.last-view__add-cart.btn-red В корзину
-
-                      .product-price__adven
-                        span.green-check-icon
-                        | доступно в кредит
-                .col-md-3
-
-                  .last-view__item
-                    .last-view__item-image
-                      img(src='../images/stanok.jpg' alt='Станок')
-
-                    .last-view__item-desc
-                      .last-view__item-type Шиномонтажный полуавтоматический станок
-
-                      .last-view__item-name NORDBERG 4638E
-
-                      .last-view__item-actions.flex
-
-                        .last-view__item-prices
-                          .product-price__discount
-                            span.price-discount 123 450
-
-                          .product-price__price 89 900
+                          .product-price__price 89 900 <span class="rubl">Р</span>
 
                         button.last-view__add-cart.btn-red В корзину
 
@@ -338,9 +371,9 @@ html(lang="ru")
 
                         .last-view__item-prices
                           .product-price__discount
-                            span.price-discount 123 450
+                            span.price-discount 123 450 <span class="rubl">Р</span>
 
-                          .product-price__price 89 900
+                          .product-price__price 89 900 <span class="rubl">Р</span>
 
                         button.last-view__add-cart.btn-red В корзину
 
@@ -362,9 +395,33 @@ html(lang="ru")
 
                         .last-view__item-prices
                           .product-price__discount
-                            span.price-discount 123 450
+                            span.price-discount 123 450 <span class="rubl">Р</span>
 
-                          .product-price__price 89 900
+                          .product-price__price 89 900 <span class="rubl">Р</span>
+
+                        button.last-view__add-cart.btn-red В корзину
+
+                      .product-price__adven
+                        span.green-check-icon
+                        | доступно в кредит
+                .col-md-3
+
+                  .last-view__item
+                    .last-view__item-image
+                      img(src='../images/stanok.jpg' alt='Станок')
+
+                    .last-view__item-desc
+                      .last-view__item-type Шиномонтажный полуавтоматический станок
+
+                      .last-view__item-name NORDBERG 4638E
+
+                      .last-view__item-actions.flex
+
+                        .last-view__item-prices
+                          .product-price__discount
+                            span.price-discount 123 450 <span class="rubl">Р</span>
+
+                          .product-price__price 89 900 <span class="rubl">Р</span>
 
                         button.last-view__add-cart.btn-red В корзину
 
